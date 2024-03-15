@@ -1,0 +1,644 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IBookingService
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IBookingService
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="WebCore.Core.Services.Bookings.Interface.IBookingService">
+  
+  
+  <h1 id="WebCore_Core_Services_Bookings_Interface_IBookingService" data-uid="WebCore.Core.Services.Bookings.Interface.IBookingService" class="text-break">Interface IBookingService
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="WebCore.Core.Services.Bookings.Interface.html">WebCore.Core.Services.Bookings.Interface</a></h6>
+  <h6><strong>Assembly</strong>: WebCore.Core.dll</h6>
+  <h5 id="WebCore_Core_Services_Bookings_Interface_IBookingService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IBookingService : IAutoDependencyCore</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Booking/Interface/IBookingService.cs#lines-13">View Source</a>
+  </span>
+  <a id="WebCore_Core_Services_Bookings_Interface_IBookingService_BookService_" data-uid="WebCore.Core.Services.Bookings.Interface.IBookingService.BookService*"></a>
+  <h4 id="WebCore_Core_Services_Bookings_Interface_IBookingService_BookService_WebCore_Data_Models_Bookings_CreateBookingRequest_WebCore_Data_Entity_ApplicationUser_" data-uid="WebCore.Core.Services.Bookings.Interface.IBookingService.BookService(WebCore.Data.Models.Bookings.CreateBookingRequest,WebCore.Data.Entity.ApplicationUser)">BookService(CreateBookingRequest, ApplicationUser)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;CreateBookingResponse&gt; BookService(CreateBookingRequest createBookingRequest, ApplicationUser applicationUser)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WebCore.Data.Models.Bookings.CreateBookingRequest.html">CreateBookingRequest</a></td>
+        <td><span class="parametername">createBookingRequest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WebCore.Data.Entity.ApplicationUser.html">ApplicationUser</a></td>
+        <td><span class="parametername">applicationUser</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="WebCore.Data.Models.Bookings.CreateBookingResponse.html">CreateBookingResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Booking/Interface/IBookingService.cs#lines-12">View Source</a>
+  </span>
+  <a id="WebCore_Core_Services_Bookings_Interface_IBookingService_CalculateTotalNumberOfBookings_" data-uid="WebCore.Core.Services.Bookings.Interface.IBookingService.CalculateTotalNumberOfBookings*"></a>
+  <h4 id="WebCore_Core_Services_Bookings_Interface_IBookingService_CalculateTotalNumberOfBookings" data-uid="WebCore.Core.Services.Bookings.Interface.IBookingService.CalculateTotalNumberOfBookings">CalculateTotalNumberOfBookings()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;int&gt; CalculateTotalNumberOfBookings()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Booking/Interface/IBookingService.cs#lines-15">View Source</a>
+  </span>
+  <a id="WebCore_Core_Services_Bookings_Interface_IBookingService_CalculateTotalNumberOfVendorBookings_" data-uid="WebCore.Core.Services.Bookings.Interface.IBookingService.CalculateTotalNumberOfVendorBookings*"></a>
+  <h4 id="WebCore_Core_Services_Bookings_Interface_IBookingService_CalculateTotalNumberOfVendorBookings_System_String_" data-uid="WebCore.Core.Services.Bookings.Interface.IBookingService.CalculateTotalNumberOfVendorBookings(System.String)">CalculateTotalNumberOfVendorBookings(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;int&gt; CalculateTotalNumberOfVendorBookings(string businessInformationId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">businessInformationId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Booking/Interface/IBookingService.cs#lines-16">View Source</a>
+  </span>
+  <a id="WebCore_Core_Services_Bookings_Interface_IBookingService_CalculateTotalNumberOfVendorCompletedBookings_" data-uid="WebCore.Core.Services.Bookings.Interface.IBookingService.CalculateTotalNumberOfVendorCompletedBookings*"></a>
+  <h4 id="WebCore_Core_Services_Bookings_Interface_IBookingService_CalculateTotalNumberOfVendorCompletedBookings_System_String_" data-uid="WebCore.Core.Services.Bookings.Interface.IBookingService.CalculateTotalNumberOfVendorCompletedBookings(System.String)">CalculateTotalNumberOfVendorCompletedBookings(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;int&gt; CalculateTotalNumberOfVendorCompletedBookings(string businessInformationId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">businessInformationId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Booking/Interface/IBookingService.cs#lines-10">View Source</a>
+  </span>
+  <a id="WebCore_Core_Services_Bookings_Interface_IBookingService_CancelBooking_" data-uid="WebCore.Core.Services.Bookings.Interface.IBookingService.CancelBooking*"></a>
+  <h4 id="WebCore_Core_Services_Bookings_Interface_IBookingService_CancelBooking_WebCore_Data_Models_Bookings_CancelBookingRequest_" data-uid="WebCore.Core.Services.Bookings.Interface.IBookingService.CancelBooking(WebCore.Data.Models.Bookings.CancelBookingRequest)">CancelBooking(CancelBookingRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;CancelBookingResponse&gt; CancelBooking(CancelBookingRequest cancelBookingRequest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WebCore.Data.Models.Bookings.CancelBookingRequest.html">CancelBookingRequest</a></td>
+        <td><span class="parametername">cancelBookingRequest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="WebCore.Data.Models.Bookings.CancelBookingResponse.html">CancelBookingResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Booking/Interface/IBookingService.cs#lines-19">View Source</a>
+  </span>
+  <a id="WebCore_Core_Services_Bookings_Interface_IBookingService_GetClientsWhoBookedService_" data-uid="WebCore.Core.Services.Bookings.Interface.IBookingService.GetClientsWhoBookedService*"></a>
+  <h4 id="WebCore_Core_Services_Bookings_Interface_IBookingService_GetClientsWhoBookedService_System_String_" data-uid="WebCore.Core.Services.Bookings.Interface.IBookingService.GetClientsWhoBookedService(System.String)">GetClientsWhoBookedService(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;BookedServiceClientNameResponse&gt;&gt; GetClientsWhoBookedService(string businessInformationId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">businessInformationId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="WebCore.Data.Models.Bookings.BookedServiceClientNameResponse.html">BookedServiceClientNameResponse</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Booking/Interface/IBookingService.cs#lines-11">View Source</a>
+  </span>
+  <a id="WebCore_Core_Services_Bookings_Interface_IBookingService_GetCustomerBookingById_" data-uid="WebCore.Core.Services.Bookings.Interface.IBookingService.GetCustomerBookingById*"></a>
+  <h4 id="WebCore_Core_Services_Bookings_Interface_IBookingService_GetCustomerBookingById_System_String_" data-uid="WebCore.Core.Services.Bookings.Interface.IBookingService.GetCustomerBookingById(System.String)">GetCustomerBookingById(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;SingleCustomerBookingResponse&gt; GetCustomerBookingById(string bookingId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">bookingId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="WebCore.Data.Models.Bookings.SingleCustomerBookingResponse.html">SingleCustomerBookingResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Booking/Interface/IBookingService.cs#lines-14">View Source</a>
+  </span>
+  <a id="WebCore_Core_Services_Bookings_Interface_IBookingService_GetCustomerBookings_" data-uid="WebCore.Core.Services.Bookings.Interface.IBookingService.GetCustomerBookings*"></a>
+  <h4 id="WebCore_Core_Services_Bookings_Interface_IBookingService_GetCustomerBookings_WebCore_Data_Models_PaginationModel_WebCore_Data_Models_Bookings_BookingFilters_System_String_" data-uid="WebCore.Core.Services.Bookings.Interface.IBookingService.GetCustomerBookings(WebCore.Data.Models.PaginationModel,WebCore.Data.Models.Bookings.BookingFilters,System.String)">GetCustomerBookings(PaginationModel, BookingFilters, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;PaginatedListResponse&lt;CustomerBookingResponse&gt;&gt; GetCustomerBookings(PaginationModel paginationModel, BookingFilters bookingFilters, string userId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WebCore.Data.Models.PaginationModel.html">PaginationModel</a></td>
+        <td><span class="parametername">paginationModel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WebCore.Data.Models.Bookings.BookingFilters.html">BookingFilters</a></td>
+        <td><span class="parametername">bookingFilters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="WebCore.Data.Models.PaginatedListResponse-1.html">PaginatedListResponse</a>&lt;<a class="xref" href="WebCore.Data.Models.Bookings.CustomerBookingResponse.html">CustomerBookingResponse</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Booking/Interface/IBookingService.cs#lines-20">View Source</a>
+  </span>
+  <a id="WebCore_Core_Services_Bookings_Interface_IBookingService_GetServicesBookedByClient_" data-uid="WebCore.Core.Services.Bookings.Interface.IBookingService.GetServicesBookedByClient*"></a>
+  <h4 id="WebCore_Core_Services_Bookings_Interface_IBookingService_GetServicesBookedByClient_System_String_System_String_" data-uid="WebCore.Core.Services.Bookings.Interface.IBookingService.GetServicesBookedByClient(System.String,System.String)">GetServicesBookedByClient(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;ServicesBookedByClientResponse&gt;&gt; GetServicesBookedByClient(string applicationUserId, string businessInformationId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">applicationUserId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">businessInformationId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="WebCore.Data.Models.Bookings.ServicesBookedByClientResponse.html">ServicesBookedByClientResponse</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Booking/Interface/IBookingService.cs#lines-18">View Source</a>
+  </span>
+  <a id="WebCore_Core_Services_Bookings_Interface_IBookingService_GetVendorBookingById_" data-uid="WebCore.Core.Services.Bookings.Interface.IBookingService.GetVendorBookingById*"></a>
+  <h4 id="WebCore_Core_Services_Bookings_Interface_IBookingService_GetVendorBookingById_System_String_" data-uid="WebCore.Core.Services.Bookings.Interface.IBookingService.GetVendorBookingById(System.String)">GetVendorBookingById(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;SingleVendorBookingResponse&gt; GetVendorBookingById(string bookingId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">bookingId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="WebCore.Data.Models.Bookings.SingleVendorBookingResponse.html">SingleVendorBookingResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Booking/Interface/IBookingService.cs#lines-17">View Source</a>
+  </span>
+  <a id="WebCore_Core_Services_Bookings_Interface_IBookingService_GetVendorBookings_" data-uid="WebCore.Core.Services.Bookings.Interface.IBookingService.GetVendorBookings*"></a>
+  <h4 id="WebCore_Core_Services_Bookings_Interface_IBookingService_GetVendorBookings_WebCore_Data_Models_PaginationModel_WebCore_Data_Models_Bookings_BookingFilters_System_String_" data-uid="WebCore.Core.Services.Bookings.Interface.IBookingService.GetVendorBookings(WebCore.Data.Models.PaginationModel,WebCore.Data.Models.Bookings.BookingFilters,System.String)">GetVendorBookings(PaginationModel, BookingFilters, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;PaginatedListResponse&lt;VendorBookingResponse&gt;&gt; GetVendorBookings(PaginationModel paginationModel, BookingFilters bookingFilters, string businessInformationId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WebCore.Data.Models.PaginationModel.html">PaginationModel</a></td>
+        <td><span class="parametername">paginationModel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WebCore.Data.Models.Bookings.BookingFilters.html">BookingFilters</a></td>
+        <td><span class="parametername">bookingFilters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">businessInformationId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="WebCore.Data.Models.PaginatedListResponse-1.html">PaginatedListResponse</a>&lt;<a class="xref" href="WebCore.Data.Models.Bookings.VendorBookingResponse.html">VendorBookingResponse</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="WebCore.Core.Helpers.ExtensionsManager.GenericTypeExtensions.html#WebCore_Core_Helpers_ExtensionsManager_GenericTypeExtensions_GetGenericTypeName_System_Object_">GenericTypeExtensions.GetGenericTypeName(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="WebCore.Core.Helpers.ExtensionsManager.GenericTypeExtensions.html#WebCore_Core_Helpers_ExtensionsManager_GenericTypeExtensions_SerializeValueJson__1___0_">GenericTypeExtensions.SerializeValueJson&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="WebCore.Core.Helpers.ExtensionsManager.GenericTypeExtensions.html#WebCore_Core_Helpers_ExtensionsManager_GenericTypeExtensions_IsNull__1___0_">GenericTypeExtensions.IsNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="WebCore.Core.Helpers.ExtensionsManager.GenericTypeExtensions.html#WebCore_Core_Helpers_ExtensionsManager_GenericTypeExtensions_IsNotNull__1___0_">GenericTypeExtensions.IsNotNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="WebCore.Core.Helpers.ExtensionsManager.GenericTypeExtensions.html#WebCore_Core_Helpers_ExtensionsManager_GenericTypeExtensions_IsSameAs__2___0___0_Func___0___1__">GenericTypeExtensions.IsSameAs&lt;T, TKey&gt;(T, T, Func&lt;T, TKey&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="WebCore.Core.Helpers.ExtensionsManager.GenericTypeExtensions.html#WebCore_Core_Helpers_ExtensionsManager_GenericTypeExtensions_GetGenericName__1___0_">GenericTypeExtensions.GetGenericName&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="WebCore.Core.Helpers.ExtensionsManager.GenericTypeExtensions.html#WebCore_Core_Helpers_ExtensionsManager_GenericTypeExtensions_ToGuid__1___0_">GenericTypeExtensions.ToGuid&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Booking/Interface/IBookingService.cs#lines-8" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1103 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AccountService
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AccountService
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="WebCore.Core.Services.Account.Implementation.AccountService">
+  
+  
+  <h1 id="WebCore_Core_Services_Account_Implementation_AccountService" data-uid="WebCore.Core.Services.Account.Implementation.AccountService" class="text-break">Class AccountService
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">AccountService</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="WebCore.Core.Services.Account.Interface.IAccountService.html">IAccountService</a></div>
+    <div><a class="xref" href="WebCore.Core.Helpers.Autofac.IAutoDependencyCore.html">IAutoDependencyCore</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="WebCore.Core.Services.Account.Implementation.html">WebCore.Core.Services.Account.Implementation</a></h6>
+  <h6><strong>Assembly</strong>: WebCore.Core.dll</h6>
+  <h5 id="WebCore_Core_Services_Account_Implementation_AccountService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AccountService : IAccountService, IAutoDependencyCore</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Account/Implementation/AccountService.cs#lines-24">View Source</a>
+  </span>
+  <a id="WebCore_Core_Services_Account_Implementation_AccountService__ctor_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.#ctor*"></a>
+  <h4 id="WebCore_Core_Services_Account_Implementation_AccountService__ctor_UserManager_WebCore_Data_Entity_ApplicationUser__IHttpContextAccessor_Microsoft_AspNetCore_Mvc_IUrlHelper_IRepository_WebCore_Core_Services_Email_Interface_IEmailService_IConfiguration_WebCore_Core_Services_Settings_Interface_ISettingService_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.#ctor(UserManager{WebCore.Data.Entity.ApplicationUser},IHttpContextAccessor,Microsoft.AspNetCore.Mvc.IUrlHelper,IRepository,WebCore.Core.Services.Email.Interface.IEmailService,IConfiguration,WebCore.Core.Services.Settings.Interface.ISettingService)">AccountService(UserManager&lt;ApplicationUser&gt;, IHttpContextAccessor, IUrlHelper, IRepository, IEmailService, IConfiguration, ISettingService)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccountService(UserManager&lt;ApplicationUser&gt; userManager, IHttpContextAccessor contextAccessor, IUrlHelper urlHelper, IRepository repository, IEmailService emailService, IConfiguration config, ISettingService settingService)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UserManager</span>&lt;<a class="xref" href="WebCore.Data.Entity.ApplicationUser.html">ApplicationUser</a>&gt;</td>
+        <td><span class="parametername">userManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IHttpContextAccessor</span></td>
+        <td><span class="parametername">contextAccessor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Mvc.IUrlHelper</span></td>
+        <td><span class="parametername">urlHelper</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IRepository</span></td>
+        <td><span class="parametername">repository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WebCore.Core.Services.Email.Interface.IEmailService.html">IEmailService</a></td>
+        <td><span class="parametername">emailService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IConfiguration</span></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WebCore.Core.Services.Settings.Interface.ISettingService.html">ISettingService</a></td>
+        <td><span class="parametername">settingService</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Account/Implementation/AccountService.cs#lines-189">View Source</a>
+  </span>
+  <a id="WebCore_Core_Services_Account_Implementation_AccountService_CalculateTotalNumberOfClients_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.CalculateTotalNumberOfClients*"></a>
+  <h4 id="WebCore_Core_Services_Account_Implementation_AccountService_CalculateTotalNumberOfClients" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.CalculateTotalNumberOfClients">CalculateTotalNumberOfClients()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;int&gt; CalculateTotalNumberOfClients()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Account/Implementation/AccountService.cs#lines-195">View Source</a>
+  </span>
+  <a id="WebCore_Core_Services_Account_Implementation_AccountService_CalculateTotalNumberOfPayouts_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.CalculateTotalNumberOfPayouts*"></a>
+  <h4 id="WebCore_Core_Services_Account_Implementation_AccountService_CalculateTotalNumberOfPayouts_WebCore_Data_Enumerators_PaymentStatus_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.CalculateTotalNumberOfPayouts(WebCore.Data.Enumerators.PaymentStatus)">CalculateTotalNumberOfPayouts(PaymentStatus)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;int&gt; CalculateTotalNumberOfPayouts(PaymentStatus status)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WebCore.Data.Enumerators.PaymentStatus.html">PaymentStatus</a></td>
+        <td><span class="parametername">status</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Account/Implementation/AccountService.cs#lines-192">View Source</a>
+  </span>
+  <a id="WebCore_Core_Services_Account_Implementation_AccountService_CalculateTotalNumberOfVendors_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.CalculateTotalNumberOfVendors*"></a>
+  <h4 id="WebCore_Core_Services_Account_Implementation_AccountService_CalculateTotalNumberOfVendors" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.CalculateTotalNumberOfVendors">CalculateTotalNumberOfVendors()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;int&gt; CalculateTotalNumberOfVendors()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Account/Implementation/AccountService.cs#lines-81">View Source</a>
+  </span>
+  <a id="WebCore_Core_Services_Account_Implementation_AccountService_ChangePassword_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.ChangePassword*"></a>
+  <h4 id="WebCore_Core_Services_Account_Implementation_AccountService_ChangePassword_System_String_WebCore_Data_Models_Account_UpdatePasswordRequest_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.ChangePassword(System.String,WebCore.Data.Models.Account.UpdatePasswordRequest)">ChangePassword(String, UpdatePasswordRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;IdentityResult&gt; ChangePassword(string userName, UpdatePasswordRequest updateUserRequest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WebCore.Data.Models.Account.UpdatePasswordRequest.html">UpdatePasswordRequest</a></td>
+        <td><span class="parametername">updateUserRequest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IdentityResult</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Account/Implementation/AccountService.cs#lines-164">View Source</a>
+  </span>
+  <a id="WebCore_Core_Services_Account_Implementation_AccountService_ConfirmEmail_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.ConfirmEmail*"></a>
+  <h4 id="WebCore_Core_Services_Account_Implementation_AccountService_ConfirmEmail_System_String_System_String_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.ConfirmEmail(System.String,System.String)">ConfirmEmail(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;Tuple&lt;bool, string&gt;&gt; ConfirmEmail(string id, string code)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">Tuple</span>&lt;<span class="xref">System.Boolean</span>, <span class="xref">System.String</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Account/Implementation/AccountService.cs#lines-41">View Source</a>
+  </span>
+  <a id="WebCore_Core_Services_Account_Implementation_AccountService_GetAllClients_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.GetAllClients*"></a>
+  <h4 id="WebCore_Core_Services_Account_Implementation_AccountService_GetAllClients" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.GetAllClients">GetAllClients()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;IEnumerable&lt;GetAllClientsResponse&gt;&gt; GetAllClients()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="WebCore.Data.Models.Account.GetAllClientsResponse.html">GetAllClientsResponse</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Account/Implementation/AccountService.cs#lines-61">View Source</a>
+  </span>
+  <a id="WebCore_Core_Services_Account_Implementation_AccountService_GetClientsByRegDate_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.GetClientsByRegDate*"></a>
+  <h4 id="WebCore_Core_Services_Account_Implementation_AccountService_GetClientsByRegDate_System_String_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.GetClientsByRegDate(System.String)">GetClientsByRegDate(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;IEnumerable&lt;GetAllClientsResponse&gt;&gt; GetClientsByRegDate(string date)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">date</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="WebCore.Data.Models.Account.GetAllClientsResponse.html">GetAllClientsResponse</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Account/Implementation/AccountService.cs#lines-123">View Source</a>
+  </span>
+  <a id="WebCore_Core_Services_Account_Implementation_AccountService_GetConfirmationToken_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.GetConfirmationToken*"></a>
+  <h4 id="WebCore_Core_Services_Account_Implementation_AccountService_GetConfirmationToken_System_String_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.GetConfirmationToken(System.String)">GetConfirmationToken(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;string&gt; GetConfirmationToken(string userName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Account/Implementation/AccountService.cs#lines-139">View Source</a>
+  </span>
+  <a id="WebCore_Core_Services_Account_Implementation_AccountService_GetForgotPasswordToken_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.GetForgotPasswordToken*"></a>
+  <h4 id="WebCore_Core_Services_Account_Implementation_AccountService_GetForgotPasswordToken_System_String_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.GetForgotPasswordToken(System.String)">GetForgotPasswordToken(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;string&gt; GetForgotPasswordToken(string emailAddress)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">emailAddress</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Account/Implementation/AccountService.cs#lines-211">View Source</a>
+  </span>
+  <a id="WebCore_Core_Services_Account_Implementation_AccountService_GetProfileCompleteness_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.GetProfileCompleteness*"></a>
+  <h4 id="WebCore_Core_Services_Account_Implementation_AccountService_GetProfileCompleteness_System_String_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.GetProfileCompleteness(System.String)">GetProfileCompleteness(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;double&gt; GetProfileCompleteness(string userId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Account/Implementation/AccountService.cs#lines-37">View Source</a>
+  </span>
+  <a id="WebCore_Core_Services_Account_Implementation_AccountService_GetUserAccount_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.GetUserAccount*"></a>
+  <h4 id="WebCore_Core_Services_Account_Implementation_AccountService_GetUserAccount_System_String_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.GetUserAccount(System.String)">GetUserAccount(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;ApplicationUser&gt; GetUserAccount(string userName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="WebCore.Data.Entity.ApplicationUser.html">ApplicationUser</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Account/Implementation/AccountService.cs#lines-39">View Source</a>
+  </span>
+  <a id="WebCore_Core_Services_Account_Implementation_AccountService_GetUserAccountById_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.GetUserAccountById*"></a>
+  <h4 id="WebCore_Core_Services_Account_Implementation_AccountService_GetUserAccountById_System_String_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.GetUserAccountById(System.String)">GetUserAccountById(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;ApplicationUser&gt; GetUserAccountById(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="WebCore.Data.Entity.ApplicationUser.html">ApplicationUser</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Account/Implementation/AccountService.cs#lines-132">View Source</a>
+  </span>
+  <a id="WebCore_Core_Services_Account_Implementation_AccountService_GetUserProfileAsync_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.GetUserProfileAsync*"></a>
+  <h4 id="WebCore_Core_Services_Account_Implementation_AccountService_GetUserProfileAsync_System_String_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.GetUserProfileAsync(System.String)">GetUserProfileAsync(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;UserProfileResponse&gt; GetUserProfileAsync(string userName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="WebCore.Data.Models.Account.UserProfileResponse.html">UserProfileResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Account/Implementation/AccountService.cs#lines-93">View Source</a>
+  </span>
+  <a id="WebCore_Core_Services_Account_Implementation_AccountService_IsAuthorizedAsync_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.IsAuthorizedAsync*"></a>
+  <h4 id="WebCore_Core_Services_Account_Implementation_AccountService_IsAuthorizedAsync_System_String_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.IsAuthorizedAsync(System.String)">IsAuthorizedAsync(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;bool&gt; IsAuthorizedAsync(string userName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Account/Implementation/AccountService.cs#lines-91">View Source</a>
+  </span>
+  <a id="WebCore_Core_Services_Account_Implementation_AccountService_IsEmailConfirmed_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.IsEmailConfirmed*"></a>
+  <h4 id="WebCore_Core_Services_Account_Implementation_AccountService_IsEmailConfirmed_System_String_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.IsEmailConfirmed(System.String)">IsEmailConfirmed(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;bool&gt; IsEmailConfirmed(string emailAddress)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">emailAddress</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Account/Implementation/AccountService.cs#lines-89">View Source</a>
+  </span>
+  <a id="WebCore_Core_Services_Account_Implementation_AccountService_IsUserExistsAsync_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.IsUserExistsAsync*"></a>
+  <h4 id="WebCore_Core_Services_Account_Implementation_AccountService_IsUserExistsAsync_System_String_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.IsUserExistsAsync(System.String)">IsUserExistsAsync(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;bool&gt; IsUserExistsAsync(string emailAddress)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">emailAddress</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Account/Implementation/AccountService.cs#lines-119">View Source</a>
+  </span>
+  <a id="WebCore_Core_Services_Account_Implementation_AccountService_LockAsync_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.LockAsync*"></a>
+  <h4 id="WebCore_Core_Services_Account_Implementation_AccountService_LockAsync_System_String_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.LockAsync(System.String)">LockAsync(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;bool&gt; LockAsync(string userName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Account/Implementation/AccountService.cs#lines-153">View Source</a>
+  </span>
+  <a id="WebCore_Core_Services_Account_Implementation_AccountService_ResetPassword_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.ResetPassword*"></a>
+  <h4 id="WebCore_Core_Services_Account_Implementation_AccountService_ResetPassword_Guid_System_String_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.ResetPassword(Guid,System.String)">ResetPassword(Guid, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;bool&gt; ResetPassword(Guid tokenIdentifier, string password)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">tokenIdentifier</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">password</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Account/Implementation/AccountService.cs#lines-121">View Source</a>
+  </span>
+  <a id="WebCore_Core_Services_Account_Implementation_AccountService_UnlockAsync_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.UnlockAsync*"></a>
+  <h4 id="WebCore_Core_Services_Account_Implementation_AccountService_UnlockAsync_System_String_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.UnlockAsync(System.String)">UnlockAsync(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;bool&gt; UnlockAsync(string userName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Account/Implementation/AccountService.cs#lines-99">View Source</a>
+  </span>
+  <a id="WebCore_Core_Services_Account_Implementation_AccountService_UpdateUserProfile_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.UpdateUserProfile*"></a>
+  <h4 id="WebCore_Core_Services_Account_Implementation_AccountService_UpdateUserProfile_WebCore_Data_Models_Account_UpdateUserProfileRequest_System_String_System_String_" data-uid="WebCore.Core.Services.Account.Implementation.AccountService.UpdateUserProfile(WebCore.Data.Models.Account.UpdateUserProfileRequest,System.String,System.String)">UpdateUserProfile(UpdateUserProfileRequest, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;UpdateUserProfileResponse&gt; UpdateUserProfile(UpdateUserProfileRequest updateUserProfileRequest, string userId, string emailAddress = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WebCore.Data.Models.Account.UpdateUserProfileRequest.html">UpdateUserProfileRequest</a></td>
+        <td><span class="parametername">updateUserProfileRequest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">emailAddress</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="WebCore.Data.Models.Account.UpdateUserProfileResponse.html">UpdateUserProfileResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="WebCore.Core.Services.Account.Interface.IAccountService.html">IAccountService</a>
+  </div>
+  <div>
+      <a class="xref" href="WebCore.Core.Helpers.Autofac.IAutoDependencyCore.html">IAutoDependencyCore</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="WebCore.Core.Helpers.ExtensionsManager.GenericTypeExtensions.html#WebCore_Core_Helpers_ExtensionsManager_GenericTypeExtensions_GetGenericTypeName_System_Object_">GenericTypeExtensions.GetGenericTypeName(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="WebCore.Core.Helpers.ExtensionsManager.GenericTypeExtensions.html#WebCore_Core_Helpers_ExtensionsManager_GenericTypeExtensions_SerializeValueJson__1___0_">GenericTypeExtensions.SerializeValueJson&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="WebCore.Core.Helpers.ExtensionsManager.GenericTypeExtensions.html#WebCore_Core_Helpers_ExtensionsManager_GenericTypeExtensions_IsNull__1___0_">GenericTypeExtensions.IsNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="WebCore.Core.Helpers.ExtensionsManager.GenericTypeExtensions.html#WebCore_Core_Helpers_ExtensionsManager_GenericTypeExtensions_IsNotNull__1___0_">GenericTypeExtensions.IsNotNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="WebCore.Core.Helpers.ExtensionsManager.GenericTypeExtensions.html#WebCore_Core_Helpers_ExtensionsManager_GenericTypeExtensions_IsSameAs__2___0___0_Func___0___1__">GenericTypeExtensions.IsSameAs&lt;T, TKey&gt;(T, T, Func&lt;T, TKey&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="WebCore.Core.Helpers.ExtensionsManager.GenericTypeExtensions.html#WebCore_Core_Helpers_ExtensionsManager_GenericTypeExtensions_GetGenericName__1___0_">GenericTypeExtensions.GetGenericName&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="WebCore.Core.Helpers.ExtensionsManager.GenericTypeExtensions.html#WebCore_Core_Helpers_ExtensionsManager_GenericTypeExtensions_ToGuid__1___0_">GenericTypeExtensions.ToGuid&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/src/WebCore.Core/Services/Account/Implementation/AccountService.cs#lines-15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
