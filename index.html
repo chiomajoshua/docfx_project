@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Love In Planning Backend Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Love In Planning Backend Documentation ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="love-in-planning-backend-documentation">Love In Planning Backend Documentation</h1>
+
+<p>Welcome to the documentation for our Backend project! This guide provides a comprehensive overview of the project's structure, architecture, and key components. Whether you're a developer contributing or a team member seeking understanding, you're in the right place.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#project-structure">Project Structure</a></li>
+<li><a href="#architecture-overview">Architecture Overview</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#dockerization">Dockerization</a>
+<ul>
+<li><a href="#development-environment">Development Environment</a></li>
+</ul>
+</li>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#license">License</a></li>
+</ol>
+<h2 id="introduction">Introduction</h2>
+<p>Our Backend project uses .NET 6 and follows a microservices architecture for modularity, scalability, and maintainability.
+using Entity Framework Core, CQRS, Repository Design Pattern, AWS SES for Messaging, Integration with PayStack, Azure Redis, Azure SQL Server, Azure Blob Storage, Docker, and more.</p>
+<h2 id="project-structure">Project Structure</h2>
+<p>The project is structured as follows:</p>
+<p>LIP Backend</p>
+<ul>
+<li><code>src</code> contains backend source.
+<ul>
+<li><code>api</code>
+<ul>
+<li><code>WebCore</code>
+<ul>
+<li><code>WebCore.API</code> contains API project, controllers, middlewares</li>
+<li><code>WebCore.Core</code> contains core logic, Handlers, Commands, Query, Implements Repository Design Pattern</li>
+<li><code>WebCore.Data</code> contains models, entities, validators, and database context</li>
+<li><code>docker-compose.yml</code> and <code>docker-compose.prod.yml</code> define Docker configs.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>README.md</code> ReadMe file</li>
+<li><code>.gitignore</code> gitignore file</li>
+</ul>
+<h2 id="architecture-overview">Architecture Overview</h2>
+<p>Our backend follow a CQRS architecture, with the Retailer backend utilizing Entity Framework Core.
+This architecture promotes separation of concerns and allows for efficient query and command handling.</p>
+<h2 id="database">Database</h2>
+<p>Uses SQL Server
+On project run, it creates a database and its tables.
+This centralizes data storage, facilitating data consistency and integrity.</p>
+<h2 id="dockerization">Dockerization</h2>
+<h3 id="development-environment">Development Environment</h3>
+<p>Use <code>docker-compose.yml</code> for development. Run <code>docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d</code> to start services.</p>
+<h2 id="getting-started">Getting Started</h2>
+<ol>
+<li>Clone the repository.</li>
+<li>Set up Docker and Docker Compose.</li>
+<li>Choose Docker config (<code>docker-compose.yml</code> for dev, <code>docker-compose.prod.yml</code> for prod).</li>
+<li>Run Docker commands to start services.</li>
+</ol>
+<h2 id="contributing">Contributing</h2>
+<ol>
+<li>Fork the repository.</li>
+<li>Create a feature branch.</li>
+<li>Implement changes and write tests.</li>
+<li>Open a pull request with details.</li>
+</ol>
+<h2 id="license">License</h2>
+<p>Licensed under the <a href="LICENSE">MIT License</a>.</p>
+<p>Feel free to reach out for questions or clarifications.</p>
+<p>Happy coding!</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/hzinfrastructure/lip.api/src/Develop/src/api/WebCore/LIPDocumentation/docfx_project/index.md#lines-1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>
